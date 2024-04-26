@@ -1,14 +1,112 @@
 <!DOCTYPE html>
-
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="styles/style.css"/>
-  <title>Birthday Card</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday MAX</title>
+    <style>
+        /* Center the content */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0; /* Light gray background */
+        }
+        /* Style the container */
+        .container {
+            text-align: center;
+            padding: 50px;
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+        /* Style the title */
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 48px;
+            color: #ff3399; /* Pink color */
+            margin-bottom: 30px;
+            animation: bounceIn 1s ease-in-out;
+        }
+        /* Style the cake image */
+        .cake {
+            width: 200px;
+            margin-bottom: 30px;
+            animation: rotate 3s linear infinite;
+        }
+        /* Style the button */
+        .button {
+            padding: 10px 20px;
+            font-size: 24px;
+            background-color: #ff3399; /* Pink color */
+            color: #ffffff; /* White color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #ff007f; /* Lighter pink color on hover */
+        }
+        /* Confetti animation */
+        @keyframes confetti {
+            0% { transform: translateY(-200vh) rotateZ(0deg); }
+            100% { transform: translateY(100vh) rotateZ(360deg); }
+        }
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #ffcc00; /* Yellow color */
+            animation: confetti 4s ease-out infinite;
+        }
+        /* Adjust confetti colors */
+        .confetti:nth-child(2n) {
+            background-color: #ff3399; /* Pink color */
+        }
+        .confetti:nth-child(3n) {
+            background-color: #66ccff; /* Blue color */
+        }
+        /* Animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        @keyframes bounceIn {
+            0% { transform: scale(0.5); }
+            100% { transform: scale(1); }
+        }
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
 </head>
 <body>
-  <h1>
-    Hello, World!
-  </h1>
+    <div class="container">
+        <h1>HAPPY HAPPY BIRTH MAXXX!</h1>
+        <img class="cake" src="https://emojicdn.elk.sh/🎂" alt="Birthday Cake">
+        <button class="button" onclick="celebrate()">tap me!</button>
+    </div>
+    <!-- Confetti particles -->
+    <div class="confetti" style="top: 50%; left: 5%;"></div>
+    <div class="confetti" style="top: 70%; left: 15%;"></div>
+    <div class="confetti" style="top: 80%; left: 25%;"></div>
+    <div class="confetti" style="top: 60%; left: 35%;"></div>
+    <div class="confetti" style="top: 70%; left: 45%;"></div>
+    <div class="confetti" style="top: 40%; left: 55%;"></div>
+    <div class="confetti" style="top: 60%; left: 65%;"></div>
+    <div class="confetti" style="top: 50%; left: 75%;"></div>
+    <div class="confetti" style="top: 75%; left: 85%;"></div>
+    <div class="confetti" style="top: 30%; left: 95%;"></div>
+
+    <script>
+        function celebrate() {
+            alert("Happy birthday MAX first sorry kung ganto lang yung program HEHE hindi pa kasi ako nabibilhan ng loptop kaya sobrang i transfer sa Github ^^ Thank you kasi ikaw rin yung naging inspiration ko kahit lagi kong na leleft na seen I have ADHD kasi ^^ so I am makakalimutin na °~° Thank you for being such a good friend! I wish naging STE nalang ako just like you and Isabel so mas ma aga pa sana tayong nag ka kilala/close that is all hehe HAPPY BIRTH DAY ENJOY YOUR DAY! ");
+        }
+    </script>
 </body>
 </html>
